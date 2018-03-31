@@ -1,0 +1,81 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="computing.mobile.com.ridesharing.Login"
+    android:rowCount="4"
+    android:columnCount="2">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_horizontal"
+        android:text="Mobile"/>
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_columnWeight="1"
+        android:inputType="phone"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:paddingRight="30dp"
+        android:text="Email"/>
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textEmailAddress"
+        android:ems="10" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_height="wrap_content"
+        android:text="Password"/>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+
+        android:layout_rowWeight="1"
+        android:onClick="Onclick_log"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center"/>
+    </GridLayout>

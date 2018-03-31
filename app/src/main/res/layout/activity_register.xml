@@ -1,0 +1,126 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="computing.mobile.com.ridesharing.Register"
+    android:rowCount="6"
+    android:columnCount="2"
+    >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="left"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:paddingRight="30dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:ems="10"
+        android:layout_columnWeight="1"
+        android:hint="xyz@com"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_rowWeight="1"
+        android:paddingRight="20dp"
+        android:text="Mobile" />
+
+
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="10 digits"
+        android:layout_gravity="left"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="20dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Gender"
+        />
+    <RadioGroup
+    android:orientation="horizontal"
+        android:layout_columnWeight="1"
+        android:layout_gravity="left"
+        >
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:onClick="Onclick_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="Password" />
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_columnWeight="1"
+        android:layout_gravity="left"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button9"
+        android:onClick="Onclick_reg"
+        android:layout_width="wrap_content"
+
+        android:layout_rowWeight="1"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center"
+        android:text="Register"/>
+</GridLayout>
