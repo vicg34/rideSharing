@@ -13,7 +13,13 @@ public interface ApiInterface {
     @POST("/api/account/signup")
     Call<AccountResponseEntity> signUp(@Body SignUpUserEntity signEntity);
 
+    @POST("/api/account/login")
+    Call<AccountResponseEntity> login(@Body SignUpUserEntity signEntity);
+
     @POST("/api/location/nearby-users-without-destination")
-    Call<NearByUsersWithoutDestinationEntity> getNearByUsersWithoutDestination(@Body NearByUsersWithoutDestinationEntity nearByUsersWithoutDestinationEntity)
+    Call<NearByUsersWithoutDestinationEntity> getNearByUsersWithoutDestination(@Body NearByUsersWithoutDestinationEntity nearByUsersWithoutDestinationEntity);
+
+    @POST("/api/location/nearby-users-with-destination")
+    Call<NearByUsersWithoutDestinationEntity> getNearByUsersWithDestination(@Body NearByUsersWithoutDestinationEntity nearByUsersWithoutDestinationEntity);
 
 }
