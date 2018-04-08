@@ -13,4 +13,7 @@ public interface ApiInterface {
     @POST("/api/account/signup")
     Call<AccountResponseEntity> signUp(@Body SignUpUserEntity signEntity);
 
+    @POST("/api/location/nearby-users-without-destination")
+    Call<NearByUsersWithoutDestinationEntity> getNearByUsersWithoutDestination(@Body NearByUsersWithoutDestinationEntity nearByUsersWithoutDestinationEntity)
+
 }

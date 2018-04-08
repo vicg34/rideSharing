@@ -4,7 +4,7 @@ package computing.mobile.com.ridesharing;
  * Created by vicky on 8/4/18.
  */
 
-public class MyLocationWithDestination {
+public class MyLocationWithDestinationEntity {
     int uid;
     double srcLatitude;
     double srcLongitude;
@@ -13,7 +13,7 @@ public class MyLocationWithDestination {
     String  destination;
 
 
-    public MyLocationWithDestination(int uid, double srcLatitude, double srclongitude, double destLatitude, double destlongitude, String destination) {
+    public MyLocationWithDestinationEntity(int uid, double srcLatitude, double srclongitude, double destLatitude, double destlongitude, String destination) {
         this.uid = uid;
         this.srcLatitude = srcLatitude;
         this.srcLongitude = srclongitude;
